@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <script src="https://kit.fontawesome.com/73aa627153.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header id="banner-1">
+      <div class="navbar">
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <i class="fa-solid fa-bars" id="show"></i>
+        <div class="nav-links">
+            <nav>
+            <ul>
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="about.html">ABOUT</a></li>
+                <li> <a href="courses.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li> <a href="contact.html">CONTACT</a></li>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </ul>
+        </nav>
+        </div>
+      </div>
+      <div class="content">
+        <h2>About Us</h2>
+      </div>
+    </header>
+               
+            <section id="about-us" data-aos="fade-up">
+               
+               <div>
+               <h2>
+                We Are The World's Greatest University
+               </h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga a assumenda voluptas<br> reiciendis ipsa, laborum nulla qui libero repellendus tempora obcaecati odio nam dolor? Perferendis enim<br> voluptatum officia? Cumque quae consectetur distinctio corrupti voluptatum voluptate eos blanditiis, 
+                libero<br> harum expedita? Perspiciatis quasi necessitatibus architecto officia distinctio, tempora iure sequi<br> minima magni rem! Architecto magni 
+                doloremque culpa, perspiciatis atque nihil,<br> ex natus molestias, ut praesentium nemo maiores <br>nisi sit voluptates dolorum.</p>
+                <button class="button-1">Explore Now</button>
+               </div>
+
+               <div>
+                <img src="images/about.jpg" alt="">
+               </div>
+            </section>
+ 
+
+
+
+
+
+
+           <footer id="footer" data-aos="fade-up">
+            <h3>About Us</h3>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> 
+              Incidunt provident ratione harum sint, optio non tempore numquam ipsa a eaque excepturi minus.</p>
+              <div class="icons">
+                <i class="fa-brands fa-instagram-square" id="icons"></i>
+                <i class="fa-brands fa-twitter-square" id="icons"></i>
+                <i class="fa-brands fa-facebook-square" id="icons"></i>
+                <i class="fa-brands fa-whatsapp-square" id="icons"></i>
+              </div>
+              <p class="the-end">COPYRIGHT ©2022 ALL RIGHTS RESERVED | THIS TEMPLATE IS MADE BY <span> Sauurav Garlay</span></p>
+           </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function()
+    {
+       $("#show").click(function(){
+          $(".nav-links").animate({right : '0'});
+       });
+       $("#close").click(function(){
+          $(".nav-links").animate({right : '-300px'});
+       });
+      });
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({duration: 400,offset: 200});
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford</title>
+    <script
+      src="https://kit.fontawesome.com/73aa627153.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header id="banner-1">
+      <div class="navbar">
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <i class="fa-solid fa-bars" id="show"></i>
+        <div class="nav-links">
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="courses.html">COURSE</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+              <i class="fa-solid fa-xmark" id="close"></i>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Contact Us</h2>
+      </div>
+    </header>
+
+    <section id="location" data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109740.86108784034!2d76.69348820329914!3d30.735210199731238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1655453868862!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section id="Contact">
+      <div class="contact-icon" data-aos="fade-up">
+        <div class="contact-box">
+          <div><i class="fa-solid fa-house" id="contact-icon-1"></i></div>
+          <div>
+            <h3>XYZ Road, ABC Building</h3>
+            <p class="para-1">Mohali,Chandigarh</p>
+          </div>
+        </div>
+        <div class="contact-box">
+          <div><i class="fa-solid fa-phone" id="contact-icon"></i></div>
+          <div>
+            <h3>+9170878-47287</h3>
+            <p class="para-1">Monday To Saturday 10am To 6pm</p>
+          </div>
+        </div>
+        <div class="contact-box">
+          <div><i class="fa-solid fa-envelope" id="contact-icon"></i></div>
+          <div>
+            <h3>SouravGarlay@gmail.com</h3>
+            <p class="para-1">Email Us Your Query</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form" data-aos="fade-up">
+        <form>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            class="contact-input"
+          /><br />
+          <input
+            type="text"
+            placeholder="Enter Your Email"
+            class="contact-input"
+          /><br />
+          <input
+            type="text"
+            placeholder="Enter Subject"
+            class="contact-input"
+          /><br />
+          <textarea
+            rows="5"
+            class="contact-input"
+            placeholder="Enter Message"
+          ></textarea
+          ><br />
+          <button class="button-1">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer" data-aos="fade-up">
+      <h3>About Us</h3>
+      <p class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+        Incidunt provident ratione harum sint, optio non tempore numquam ipsa a
+        eaque excepturi minus.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-instagram-square" id="icons"></i>
+        <i class="fa-brands fa-twitter-square" id="icons"></i>
+        <i class="fa-brands fa-facebook-square" id="icons"></i>
+        <i class="fa-brands fa-whatsapp-square" id="icons"></i>
+      </div>
+      <p class="the-end">
+        COPYRIGHT ©2022 ALL RIGHTS RESERVED | THIS TEMPLATE IS MADE BY
+        <span> Sauurav Garlay</span>
+      </p>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $("#show").click(function () {
+          $(".nav-links").animate({ right: "0" });
+        });
+        $("#close").click(function () {
+          $(".nav-links").animate({ right: "-300px" });
+        });
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 400, offset: 200 });
+    </script>
+  </body>
+</html>
